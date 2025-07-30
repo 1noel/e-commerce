@@ -1,39 +1,39 @@
 <template>
-     <button @click="openModal" class="border rounded-2xl px-3 py-1 text-lg cursor-pointer text-blue-900 hover:text-blue-800 font-medium" ><i class="fa-regular fa-user"></i> Sign In</button>
+     <button @click="openModal" class="border rounded-2xl px-3 py-1 text-sm cursor-pointer text-blue-900 hover:text-blue-800 font-medium" >
+        <i class="fa-regular fa-user"></i> Sign In</button>
     <div class="fixed flex justify-center items-center w-full inset-0 bg-black/50 transition-opacity z-50" v-if="isOpen">
-        <div class="w-[30%] bg-white p-10  rounded-2xl">
+        <div class="w-[25%] bg-white p-5   rounded-md">
             <div class="flex justify-between items-center mb-8">
-                <h1 class="text-3xl font-bold text-blue-900">Sign In</h1>
-                <button @click="closeModal" class="text-lg cursor-pointer  text-gray-500"><i class="fa-solid fa-xmark"></i></button>
+                <h1 class="text-lg font-medium text-blue-900">Login</h1>
+                <button @click="closeModal" class="text-sm cursor-pointer  text-gray-500"><i class="fa-solid fa-xmark"></i></button>
             </div>
 
             <form action="">
-                  <div class="mt-5">
-                    <label for="" class="text-xl">Phone Number</label>
-                    <input type="text" name="" placeholder="Enter your names" class="w-full mt-3 border rounded-lg px-3 py-2 focus:outline-none">
+                  <div class="mt-3">
+                    <label for="" class="text-sm">Phone Number</label>
+                    <input type="text" name="" placeholder="Enter your names" class="w-full mt-1 border rounded px-3 py-1 text-sm focus:outline-none">
                 </div>
-                  <div class="mt-5">
-                    <label for="" class="text-xl">Password</label>
-                    <input type="text" name="" placeholder="Enter your names" class="w-full mt-3 border rounded-lg px-3 py-2 focus:outline-none">
+                  <div class="mt-3">
+                    <label for="" class="text-sm">Password</label>
+                    <input type="text" name="" placeholder="Enter your names" class="w-full mt-1 border rounded px-3 py-1 text-sm focus:outline-none">
                 </div>
-                <div class="mt-10 text-center">
+                <div class="mt-5 text-center">
                     <div class="flex justify-center gap-5 items-center">
-                    <button type="button" @click="closeModal" class="px-10 py-1 rounded-2xl cursor-pointer border text-blue-900 text-2xl">Cancel</button>
-                    <button type="submit" class="px-10 py-1 rounded-2xl cursor-pointer text-2xl bg-blue-900  text-white">Login</button>
+                    <button type="submit" class="px-10 py-2 rounded-xl cursor-pointer text-sm bg-blue-900  text-white">Login</button>
                     </div>
-                    <span class="block text-lg mt-3">Don't have account please <span class="text-blue-900 font-medium cursor-pointer">Create Account</span>?</span>
+                    <span class="block text-xs mt-3">Don't have account please <span class="text-blue-900 font-medium cursor-pointer">Create Account</span>?</span>
                 </div>
             </form>
 
             <div class="flex gap-5 items-center mt-5">
-                <div class="bg-gray-200 h-0.5 w-[30%]" ></div>
-                <span class="text-blue-900">Continue With</span>
-                <div class="bg-gray-200 h-0.5 w-[30%]" ></div>
+                <div class="bg-gray-200 h-0.5 w-[25%]" ></div>
+                <span class="text-blue-900 text-xs">Continue With</span>
+                <div class="bg-gray-200 h-0.5 w-[25%]" ></div>
             </div>
 
              <div class="flex gap-2 items-center justify-center mt-5"> 
-                <button class="border px-5 lg:w-1/2 w-full  py-2 cursor-pointer rounded-2xl text-lg text-blue-900 hover:bg-blue-900 hover:text-white" > <i class="fa-brands fa-google"></i> Google</button>
-                <button class="border px-5 lg:w-1/2 w-full  py-2 cursor-pointer rounded-2xl text-lg text-blue-900 hover:bg-blue-900 hover:text-white" > <i class="fa-brands fa-facebook"></i> Facebook</button>
+                <button class="border px-5 lg:w-1/2 w-full text-xs  py-2 cursor-pointer rounded-2xl text-blue-900 hover:bg-blue-900 hover:text-white" > <i class="fa-brands fa-google"></i> Google</button>
+                <button class="border px-5 lg:w-1/2 w-full  text-xs py-2 cursor-pointer rounded-2xl text-blue-900 hover:bg-blue-900 hover:text-white" > <i class="fa-brands fa-facebook"></i> Facebook</button>
             </div>
             
         </div>

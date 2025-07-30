@@ -4,3 +4,12 @@ export interface Product {
   price: number;
   image: string;
 }
+
+export interface MenuItems{
+  id:number;
+  name:string;
+  icon:string;
+  route:string;
+  active:boolean;
+  isOpen:boolean;
+}
